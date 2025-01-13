@@ -3366,51 +3366,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6142485023926944716, guid: 8f983067574f3b04a9550e4c41e9ae31, type: 3}
   m_PrefabInstance: {fileID: 2072547385}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1154559021
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1154559023}
-  - component: {fileID: 1154559022}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1154559022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154559021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32290af7f8527824588902d477e4fc8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundArray: []
---- !u!4 &1154559023
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154559021}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183705626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8750100319029183541, guid: 8f983067574f3b04a9550e4c41e9ae31, type: 3}
@@ -6568,10 +6523,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2346549003885575589, guid: 21e7db3bd79ec5a40a595c5d858f2f50, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3122706862834456000, guid: 21e7db3bd79ec5a40a595c5d858f2f50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6716,7 +6667,8 @@ PrefabInstance:
       propertyPath: TimeBetweenAttack
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6731,4 +6683,3 @@ SceneRoots:
   - {fileID: 3527937676672997176}
   - {fileID: 153419594}
   - {fileID: 1203552157}
-  - {fileID: 1154559023}

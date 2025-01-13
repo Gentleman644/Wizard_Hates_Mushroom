@@ -11,9 +11,12 @@ public class Conditions : MonoBehaviour
     public UnityEvent winMethods;
     private Boolean didNotLose = true;
     private float timer;
+    private audioManagerScript backgroundAudio;
 
     private void Awake()
     {
+        backgroundAudio = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<audioManagerScript>();
+        backgroundAudio.playAudio("background forest sound");
         timer = timerUntilWin;
     }
 

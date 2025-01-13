@@ -12,7 +12,6 @@ public class playerMovement : MonoBehaviour
         characterBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    //looked up how fixed update works and how it does not require time.deltatime
     void FixedUpdate()
     {
         if (!isKilled)

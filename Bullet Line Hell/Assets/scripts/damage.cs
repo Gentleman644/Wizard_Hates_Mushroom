@@ -9,14 +9,14 @@ public class damage : MonoBehaviour
     private float timer = 0;
     private bool attackNow = false;
     private Animator animator;
-    private AudioSource audio;
+    private audioManagerScript attackAudio;
 
     //Todo: figure out later should I move all the damage events to conditions or not for better
     private void Awake()
     {
+        attackAudio = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<audioManagerScript>();
         timer = attackTimer + stayAttackTimer;
         animator = GetComponent<Animator>();
-        audio = GetComponent<AudioSource>();
         damageEvent.AddListener(GameObject.FindGameObjectWithTag("Player").GetComponent<playerMovement>().Killed);
         damageEvent.AddListener(GameObject.FindGameObjectWithTag("GameController").GetComponent<Conditions>().loseScreen);
         damageEvent.AddListener(GameObject.FindGameObjectWithTag("GameController").GetComponent<attackSpawner>().endAttack);
@@ -35,8 +35,7 @@ public class damage : MonoBehaviour
         }
         else if (timer <= (1 + stayAttackTimer) && !animator.GetBool("startLaser")){
             animator.SetBool("startLaser", true);
-            audio.Play();
-
+            attackAudio.playAudio("wizard attack");
         }
 
         timer -= Time.deltaTime;

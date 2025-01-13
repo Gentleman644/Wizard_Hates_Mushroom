@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6380086836345001236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3050597006649471946}
+  - component: {fileID: 1930265090143719015}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: SoundManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3050597006649471946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6380086836345001236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1930265090143719015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6380086836345001236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32290af7f8527824588902d477e4fc8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManagerMixer: {fileID: 24100000, guid: 1034de4936089374caa2c68450b90190, type: 2}
+  soundArray:
+  - name: background forest sound
+    clip: {fileID: 8300000, guid: 71d06af8446cb6646b2725a00223009a, type: 3}
+    volume: 0.5
+    pitch: 0.8
+    loop: 1
+    audioOutputGroup: Master/Music
+    source: {fileID: 0}
+  - name: wizard attack
+    clip: {fileID: 8300000, guid: 6c65eca6c13014d459423369ec1a58c4, type: 3}
+    volume: 0.4
+    pitch: 0.8
+    loop: 0
+    audioOutputGroup: Master/SFX
+    source: {fileID: 0}
